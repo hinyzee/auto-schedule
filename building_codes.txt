@@ -1,0 +1,98 @@
+Code	Building	Location	Map Bldg #
+APM	Applied Physics & Mathematics Building	Muir	249
+ASANT	Asante Hall	Eleanor Roosevelt	446
+BIO	Biology Building	Muir	259
+BIRCH	Birch Aquarium	SIO	SIO
+BONN	Bonner Hall	Revelle	131
+BSB	Basic Science Building	Medical School	820
+CCC	Cross-Cultural Center	University Center	720
+CENTR	Center Hall	University Center	984
+CICC	Copely International Conference Center	Eleanor Roosevelt	455
+CLICS	Center for Library & Instructional Computing Services	Revelle	141
+CLIN	Clinical Sciences Building	Medical School	865
+CMG	Center for Molecular Genetics	Medical School	805
+CMME	Center for Molecular Medicine East	Medical School	803
+CMMW	Center for Molecular Medicine West	Medical School	801
+CMRR	Center for Magnetic Recording Research	Warren	620
+CNCB	Center for Neural Circuits and Behavior	Medical School	805
+CRB	Chemistry Research Building	Thurgood Marshall	393
+CPMC	Conrad Presbys Music Center	University Center	955
+CSB	Cognitive Science Building	Thurgood Marshall	397
+DANCE	Wagner Dance Facility	Revelle	175
+DSD	Deep Sea Drilling Building	SIO	SIO
+EBU1	Engineering Building Unit 1	Warren	600
+EBU2	Engineering Building Unit 2	Warren	610
+EBU3B	Engineering Building Unit 3	Warren	602
+ECKRT	SIO Library, Eckart Building	SIO	SIO
+ECON	Economics Building	Thurgood Marshall	370
+ERCA	Eleanor Roosevelt College Administration	Eleanor Roosevelt	440
+FORUM	Mandell Weiss Forum	Revelle	173
+GEISL	Geisel Library	University Center	900
+GH	Galbraith Hall	Revelle	141
+HSS	Humanities & Social Sciences Building	Muir	250
+HUBBS	Hubbs Hall	SIO	SIO
+IGPP	Institute of Geophysics & Planetary Physics	SIO	SIO
+IOA	Institute of the Americas	Eleanor Roosevelt	453
+KECK	W.M. Keck Building (fMRI)	Medical School	822
+LASB	Latin American Studies Building	Eleanor Roosevelt	451
+LEDDN AUD	Patrick J. Ledden Auditorium (formerly HSS 2250)	Muir	250
+LFFB	Leichtag Family Foundation Biomedical Research Building	Medical School	804
+LIT	Literature Building	Warren	627
+MANDE	Mandeville Center	Muir	285
+MAYER	Mayer Hall	Revelle	133
+MCC	Media Center/Communication Building	Thurgood Marshall	390
+MCGIL	William J. McGill Hall	Muir	246
+MET	Medical Education and Telemedicine	Medical School	845
+MNDLR	Mandler Hall (formerly McGill Hall Annex)	Muir	245
+MTF	Medical Teaching Facility	Medical School	830
+MWEIS	Mandell Weiss Center	Revelle	171
+MYR-A	Mayer Hall Addition	Revelle	135
+NIERN	Nierenberg Hall	SIO	SIO
+NSB	Natural Sciences Building	Revelle	128
+NTV	Nierenberg Hall Annex	SIO	SIO
+OAR	Ocean & Atmospheric Res Bldg	SIO	SIO
+OFF	Off Campus	Off Campus	N/A
+OTRSN	Otterson Hall	Eleanor Roosevelt	580
+PACIF	Pacific Hall	Revelle	111
+PCYNH	Pepper Canyon Hall	University Center	780
+PETER	Peterson Hall	Thurgood Marshall	399
+PFBH	Powell-Focht Bioengineering Hall	Warren	601
+POTKR	Potiker Theatre	Revelle	177
+PRICE	Price Center	University Center	911
+RBC	Robinson Building Complex	Eleanor Roosevelt	463
+RECGM	Recreation Gym	Muir	265
+RITTR	Ritter Hall	SIO	SIO
+RVCOM	Revelle Commons	Revelle	127
+RVPRO	Revelle College Provost Building	Revelle	149
+SCHOL	Scholander Hall	SIO	SIO
+SCRB	Stein Clinical Research Building	Medical School	843
+SCRPS	Scripps Building	SIO	SIO
+SDSC	San Diego Supercomputer Center	Eleanor Roosevelt	481
+SEQUO	Sequoyah Hall	Thurgood Marshall	350
+SERF	Science & Engineering Research Facility	University Center	930
+SME	Structural & Materials Science Engineering Building	Sixth	734
+SOLIS	Faustina Solis Lecture Hall	Thurgood Marshall	395
+SPIES	Fred N. Spies Hall	SIO	SIO
+SSB	Social Sciences Building	Eleanor Roosevelt	490
+SSC	Student Services Center	University Center	931
+SVERD	Sverdrup Hall	SIO	SIO
+TBA	To Be Arranged	N/A	N/A
+TM102	Thurgood Marshall College 102	Thurgood Marshall	394
+TMCA	Thurgood Marshall College Administration Building	Thurgood Marshall	360
+U201	University Center, Building 201	University Center	985
+U303	Cancer Research Facility	University Center	958
+U409	University Center, Building 409	University Center	942/943
+U413	University Center, Building 413	University Center	738
+U413A	University Center, Building 413A	University Center	737
+U515	University Center, Building 515 (formerly R515)	University Center	In P403
+U516	University Center, Building 516 (formerly R516)	University Center	By 725
+U517	University Center, Building 517 (formerly R517)	University Center	726
+U518	University Center, Building 518 (formerly R518)	University Center	By 725
+UNEX	University Extension Complex	Marshall	325
+UREY	Urey Hall	Revelle	113
+URY-A	Urey Hall Annex	Revelle	114
+VAF	Visual Arts Facility (formerly VIS)	Sixth	711
+VAUGN	Vaughan Hall	SIO	SIO
+WFH	Wells Fargo Hall	Eleanor Roosevelt	581
+WLH	Warren Lecture Hall	Warren	625
+YORK	Herbert F. York Undergraduate Sciences Building	Revelle	137
