@@ -327,7 +327,7 @@ def sendData():
                 if instance['start']['dateTime'].split('T')[0] in holidays:
                     cal.events().delete(calendarId=new_cal['id'], eventId=instance['id']).execute()
 
-
+    session.clear()
     return redirect('/')
 
 
