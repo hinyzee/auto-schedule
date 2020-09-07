@@ -327,7 +327,7 @@ def sendData():
                 if instance['start']['dateTime'].split('T')[0] in holidays:
                     cal.events().delete(calendarId=new_cal['id'], eventId=instance['id']).execute()
 
-    session.clear()
+    #session.clear()
     return redirect('/')
 
 
@@ -346,12 +346,14 @@ def revoke():
 
   status_code = getattr(revoke, 'status_code')
 
-  if status_code == 200:
-    session.clear()
+  session.clear()
+  return redirect("/")
+
+  '''if status_code == 200:
     return('Credentials successfully revoked.')
-    #return redirect("/")
+    return redirect("/")
   else:
-    return('An error occurred.')
+    return('An error occurred.')'''
 
 
 
