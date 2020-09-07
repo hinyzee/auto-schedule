@@ -16,13 +16,16 @@ app = Flask(__name__)
 app.secret_key = 'yaYaYA'
 
 
-@app.before_request
 
+
+"""
+@app.before_request
 def before_request():
     if request.url.startswith('http://'):
         url = request.url.replace('http://', 'https://', 1)
-        code = 301
+        code = 301 # means that the url is updated
         return redirect(url, code=code)
+"""
 
 
 
@@ -50,13 +53,14 @@ def home():
             data['error'] = msg[ind]'''
 
 
-
     # state is just a variable that is stored when oauth2callback has been run
     if 'credentials' in session:
         return render_template("home.html", data=data)
 
     # if haven't logged in yet, log in
     return redirect('/authorize')
+
+
 
 
 # initialize the google login request
@@ -324,9 +328,6 @@ def sendData():
 
 
 
-
-
-
 @app.route('/revoke')
 def revoke():
   if 'credentials' not in session:
@@ -349,11 +350,14 @@ def revoke():
     return('An error occurred.')
 
 
+
+
 @app.route('/clear')
 def clear_credentials():
   if 'credentials' in session:
     del session['credentials']
   return ('/')
+
 
 
 def credentials_to_dict(credentials):
@@ -372,7 +376,22 @@ if __name__ == '__main__':
     # ACTION ITEM for developers:
     #     When running in production *do not* leave this option enabled.
     
+    
+    #not this one;os.environ['AUTHLIB_INSECURE_TRANSPORT'] = '1'
+
     os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
     os.environ['OAUTHLIB_RELAX_TOKEN_SCOPE'] = '1'
 
-    app.run(port=5000, debug=True)
+    app.run(
+      port=5000, debug=True
+      , ssl_context='adhoc'
+    ) 
+
+
+
+
+
+
+
+
+
