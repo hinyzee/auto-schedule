@@ -18,14 +18,14 @@ app.secret_key = 'yaYaYA'
 
 
 
-"""
+
 @app.before_request
 def before_request():
     if request.url.startswith('http://'):
         url = request.url.replace('http://', 'https://', 1)
         code = 301 # means that the url is updated
         return redirect(url, code=code)
-"""
+
 
 
 
@@ -33,11 +33,8 @@ def before_request():
 @app.route('/')
 def home():
 
-
     # data we need to insert in the homepage
-    data = {
-        'error':'',
-    }
+    data = {'error':''}
 
     # display error messages accordingly
     msg = [
@@ -45,27 +42,36 @@ def home():
         "Don't forget to do step 1 first!",
         "Double check if you're doing step 2 right?",
         "Hey don't ignore step 3 (-_-)",
+        "You already logged in before sir"
     ]
 
-    '''if 'e' in request.args and not request.args['e'].isalpha():
+    if 'e' in request.args and not request.args['e'].isalpha():
         ind = int(request.args['e'])
         if ind>=0 and ind<len(msg):
-            data['error'] = msg[ind]'''
+            data['error'] = msg[ind]
 
+
+
+    if  'credentials' in session:
+      data['revoke'] = "Revoke permission"
 
     # state is just a variable that is stored when oauth2callback has been run
-    if 'credentials' in session:
-        return render_template("home.html", data=data)
+    #if 'credentials' in session:
+        #return render_template("home.html", data=data)
 
     # if haven't logged in yet, log in
-    return redirect('/authorize')
+    #return redirect('/authorize')
 
+    return render_template("home.html", data=data)
 
 
 
 # initialize the google login request
 @app.route('/authorize', methods=['GET','POST'])
 def authorize():
+
+    if  'credentials' in session:
+      return redirect("/?e=4")
 
     # Create flow instance to manage the OAuth 2.0 Authorization Grant Flow steps.
     flow = Flow.from_client_secrets_file(
@@ -132,9 +138,7 @@ def oauth2callback():
   session['credentials'] = credentials_to_dict(credentials)
 
 
-  print("hello!!!")
-
-  #return a
+  
 
   return redirect('/')
 
@@ -148,7 +152,7 @@ def oauth2callback():
 import scrape
 import processData
 import datetime
-@app.route('/confirmData', methods=['POST'])
+@app.route('/confirmData', methods=['POST', 'GET'])
 def confirmData():
 
     # if user used get request
@@ -343,9 +347,9 @@ def revoke():
   status_code = getattr(revoke, 'status_code')
 
   if status_code == 200:
-    #return('Credentials successfully revoked.' + print_index_table())
     session.clear()
-    return redirect("/")
+    return('Credentials successfully revoked.')
+    #return redirect("/")
   else:
     return('An error occurred.')
 
