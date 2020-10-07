@@ -6,7 +6,7 @@ from google.oauth2.credentials import Credentials
 import requests
 API_VERSION = 'v3'
 API_SERVICE_NAME = 'calendar'
-CLIENT_SECRETS_FILE = "client_secret_622606164667-6tlp0brae4cftg99tt4abo9lkbqdhe6h.apps.googleusercontent.com.json"
+CLIENT_SECRETS_FILE = "credentials.json"
 SCOPES = [
     'https://www.googleapis.com/auth/calendar'
 ]
